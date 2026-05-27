@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables (NEVER push this - contains your API key!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Uploaded PDFs
+uploads/
+
+# FAISS database
+faiss_db/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

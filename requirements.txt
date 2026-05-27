@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pdfplumber
+sentence-transformers
+faiss-cpu
+google-generativeai
+python-multipart
+numpy
+pdfplumber
+pymupdf
+pytesseract
+pdf2image
+Pillow
