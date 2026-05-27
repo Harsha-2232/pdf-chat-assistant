@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 pdf_utils.py — Multi-layer PDF extraction
 Handles: plain text, numbers, symbols, tables, and scanned (image-based) PDFs
@@ -208,4 +209,39 @@ def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list[str]
 
         start = end - overlap  # overlap for context continuity
 
+=======
+import pdfplumber
+
+
+# Extract text from PDF
+def extract_text(pdf_path):
+
+    text = ""
+
+    with pdfplumber.open(pdf_path) as pdf:
+
+        for page in pdf.pages:
+
+            page_text = page.extract_text()
+
+            if page_text:
+                text += page_text
+
+    return text
+
+
+# Split text into chunks
+def chunk_text(text, chunk_size=500):
+
+    words = text.split()
+
+    chunks = []
+
+    for i in range(0, len(words), chunk_size):
+
+        chunk = " ".join(words[i:i + chunk_size])
+
+        chunks.append(chunk)
+
+>>>>>>> f49e9a07dfd6f01c2c3d2cd4fe7d5b1e4d8333ea
     return chunks

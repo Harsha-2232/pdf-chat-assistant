@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi
 uvicorn
 pdfplumber
@@ -11,3 +12,13 @@ pymupdf
 pytesseract
 pdf2image
 Pillow
+=======
+fastapi
+uvicorn
+pdfplumber
+sentence-transformers
+faiss-cpu
+google-generativeai
+python-multipart
+numpy
+>>>>>>> f49e9a07dfd6f01c2c3d2cd4fe7d5b1e4d8333ea
